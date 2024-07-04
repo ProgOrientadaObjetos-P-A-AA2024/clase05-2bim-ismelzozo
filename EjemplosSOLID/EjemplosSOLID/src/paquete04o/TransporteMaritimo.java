@@ -8,15 +8,15 @@ package paquete04o;
  *
  * @author User
  */
-public class TransporteMaritimo {
+public class TransporteMaritimo extends Transporte{
     
     private String cooperativaMaritima;
-    public double tarifa;
     
     public void establecerCooperativaMaritima(String n){
         cooperativaMaritima = n;
     }
     
+    @Override
     public void establecerTarifa(){
         tarifa = 2.00 + 0.20;
     }
@@ -25,7 +25,4 @@ public class TransporteMaritimo {
         return cooperativaMaritima;
     }
     
-    public double obtenerTarifa(){
-        return tarifa;
-    }
 }

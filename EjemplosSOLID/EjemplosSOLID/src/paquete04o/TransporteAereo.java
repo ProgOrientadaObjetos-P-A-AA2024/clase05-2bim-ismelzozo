@@ -8,22 +8,19 @@ package paquete04o;
  *
  * @author User
  */
-public class TransporteAereo {
+public class TransporteAereo extends Transporte{
     private String cooperativaAereo;
-    public double tarifa;
     
 
     public void establecerCooperativaAereo(String n) {
         cooperativaAereo = n;
     }
+    @Override
     public void establecerTarifa(){
         tarifa = 2.00 + 0.20;
     }
     
     public String obtenerCooperativaAerero(){
         return cooperativaAereo;
-    }
-    public double obtenerTarifa(){
-        return tarifa;
     }
 }

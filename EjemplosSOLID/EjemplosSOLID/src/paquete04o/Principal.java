@@ -39,8 +39,8 @@ public class Principal {
         lista.add(bus);
         lista.add(taxi);
         lista.add(t1);
-        lista.add(t1);
-        lista.add(t1);
+        lista.add(a);
+        lista.add(m);
         tipos.establecerTransportes(lista);
         tipos.establecerPromedioTarifas();
         

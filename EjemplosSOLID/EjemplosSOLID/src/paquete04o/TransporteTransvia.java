@@ -17,7 +17,14 @@ public class TransporteTransvia extends Transporte{
     }
     
     
+    @Override
     public void establecerTarifa(){
         tarifa = 20 + 0.1;
     }
+
+    public String obtenerCooperativaTransvia() {
+        return cooperativaTransvia;
+    }
+    
+    
 }
