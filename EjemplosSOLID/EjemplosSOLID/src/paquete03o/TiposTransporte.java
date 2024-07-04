@@ -5,6 +5,9 @@
  */
 package paquete03o;
 
+import paquete04o.TransporteMaritimo;
+import paquete04o.TransporteAereo;
+
 /**
  *
  * @author reroes
@@ -14,8 +17,8 @@ public class TiposTransporte {
     private TransporteTaxi ttaxi;
     private TransporteBus ttbus;
     private TransporteTransvia transvia;
-    // private TransporteAereo aereo;
-    // private TransporteMaritimo maritimo;
+    private TransporteAereo aereo;
+    private TransporteMaritimo maritimo;
     
     public void establecerTransporteTaxi(TransporteTaxi taxi){
         ttaxi = taxi;
@@ -27,6 +30,22 @@ public class TiposTransporte {
     
     public void establecerTransporteTransvia(TransporteTransvia t){
         transvia = t;
+    }
+    
+    public void establecerTransporteAereo(TransporteAereo a){
+        aereo = a;
+    }
+    
+    public void establecerTransporteMaritimo(TransporteMaritimo m){
+        maritimo = m;
+    }
+    
+    public TransporteAereo obtenerTransporteAerero(){
+        return aereo;
+    }
+    
+    public TransporteMaritimo obtenerTransporteMeritimo(){
+        return maritimo;
     }
     
     public TransporteTaxi obtenerTransporteTaxi(){

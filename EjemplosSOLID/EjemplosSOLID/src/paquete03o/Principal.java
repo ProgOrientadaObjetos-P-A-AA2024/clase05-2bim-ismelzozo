@@ -3,6 +3,9 @@
  */
 package paquete03o;
 
+import paquete04o.TransporteMaritimo;
+import paquete04o.TransporteAereo;
+
 /**
  *
  * @author reroes
@@ -26,6 +29,8 @@ public class Principal {
         tipos.establecerTransporteTaxi(taxi);
         tipos.establecerTransporteTransvia(t1);
         tipos.establecerPromedioTarifas();
+        tipos.establecerTransporteAereo(a);
+        tipos.establecerTransporteMaritimo(m);
         
         
     
