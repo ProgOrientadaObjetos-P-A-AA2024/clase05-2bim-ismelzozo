@@ -11,7 +11,6 @@ package paquete06l;
  */
 public class MayorEdad extends Persona{
     private TarjetaCredito tarjeta;
-    //private String tarjeta;
     
     
     
