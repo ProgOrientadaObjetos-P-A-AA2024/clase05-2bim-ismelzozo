@@ -10,27 +10,27 @@ public class Principal {
         APIDgo dgo = new APIDgo();
         dgo.establecerApiKey("Why");
 
-        GeneradorPeliculas gp0 = new GeneradorPeliculas();
-        gp0.establecerLlave(dgo);
-        gp0.establecerUrl("http://api.movie?api=");
-        System.out.println(gp0.obtenerUrl());
+        GeneradorPeliculas g = new GeneradorPeliculas();
+        g.establecerLlave(dgo);
+        g.establecerUrl("http://api.movie?api=");
+        System.out.println(g.obtenerUrl());
 
         System.out.println("---------------------------");
 
-        APIDisneyPlus di = new APIDisneyPlus();
-        di.establecerApiKey("olamen");
+        APIDisneyPlus apidi = new APIDisneyPlus();
+        apidi.establecerApiKey("olamen");
         GeneradorPeliculas gp11 = new GeneradorPeliculas();
-        gp11.establecerLlave(di);
+        gp11.establecerLlave(apidi);
         gp11.establecerUrl("http://api.movie?api=");
         System.out.println(gp11.obtenerUrl());
 
         System.out.println("---------------------------");
 
-        APINetflix api = new APINetflix();
-        api.establecerApiKey("123455");
+        APINetflix api1 = new APINetflix();
+        api1.establecerApiKey("123455");
 
         GeneradorPeliculas gp = new GeneradorPeliculas();
-        gp.establecerLlave(api);
+        gp.establecerLlave(api1);
         gp.establecerUrl("http://api.movie?api=");
         System.out.println(gp.obtenerUrl());
 
